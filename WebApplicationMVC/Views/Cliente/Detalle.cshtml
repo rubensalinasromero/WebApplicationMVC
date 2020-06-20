@@ -1,0 +1,82 @@
+﻿@model WebApplicationMVC.models1.clientes
+
+@*@{
+    Layout = null;
+}*@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalle</title>
+</head>
+<body>
+    <div>
+        <h4>clientes</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.IdCliente)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IdCliente)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.AliasCliente)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.AliasCliente)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NomCliente)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NomCliente)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DirCliente)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DirCliente)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.idPais)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.idPais)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.fonoCliente)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.fonoCliente)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombrecopleto)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nombrecopleto)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Cliente", "Cliente", new { id = Model.IdCliente  }) |
+        @Html.ActionLink("Back to List", "Cliente")
+    </p>
+</body>
+</html>
